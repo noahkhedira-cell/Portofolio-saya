@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | My Project</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top, #0f2027, #0b132b, #000);
+            margin: 0;
+            color: #e0f7ff;
+        }
+
+        /* efek circuit */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+            opacity: 0.05;
+            z-index: -1;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            text-align: center;
+            padding: 30px;
+            color: black;
+            box-shadow: 0 0 20px #00f2fe;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(0,0,0,0.8);
+            padding: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        nav a {
+            color: #00f2fe;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 10px #00f2fe;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 20px rgba(0,255,255,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        /* JUDUL */
+        h2 {
+            color: #00f2fe;
+            text-shadow: 0 0 8px #00f2fe;
+            text-align: center;
+        }
+
+        .container p {
+            text-align: center;
+        }
+
+        /* GRID PROJECT */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        /* CARD PROJECT */
+        .project-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0,255,255,0.2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 0 25px #00f2fe;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .project-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #00f2fe;
+            background: transparent;
+        }
+
+        .project-card a:hover {
+            background: #00f2fe;
+            color: black;
+        }
+
+        /* FOOTER */
+        footer {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* ANIMASI */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO NOAH KHEDIRA RISNANDAR</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <h2>My Project</h2>
+    <p>
+        <i>
+        Halaman ini menampilkan kumpulan proyek yang pernah saya buat.
+        Klik judul proyek untuk melihat hasil karya saya.
+        </i>
+    </p>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="Designing.jpg" alt="Project 1">
+            <a href="Designing.jpg" target="_blank">
+                Hasil designing
+            </a>
+        </div>
+
+        <div class="project-card">
+            <img src="uprak B Indo.png" alt="Project 2">
+            <a href="https://docs.google.com/document/d/1Al_gOGxZ6tWX8bsfW9axkTOtMgIYFvFG8GNw4fk54zw/edit?tab=t.0" target="_blank">
+                UPRAK B INDO
+            </a>
+        </div>
+
+        <div class="project-card">
+            <img src="Game.png" alt="Project 3">
+            <a href="https://scratch.mit.edu/projects/1186770998/fullscreen/" target="_blank">
+                Game Scratch
+            </a>
+        </div>
+
+        <div class="project-card">
+            <img src="Fotografi lvl 7.png" alt="Project 4">
+            <a href="Fotografi lvl 7.png" target="_blank">
+                Fotografi lvl 7
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Noah Khedira@2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Video</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at top, #0f2027, #0b132b, #000);
+            margin: 0;
+            color: #e0f7ff;
+        }
+
+        /* efek circuit */
+        body::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/circuit-board.png');
+            opacity: 0.05;
+            z-index: -1;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            text-align: center;
+            padding: 30px;
+            color: black;
+            box-shadow: 0 0 20px #00f2fe;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(0,0,0,0.8);
+            padding: 12px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        nav a {
+            color: #00f2fe;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+            text-shadow: 0 0 10px #00f2fe;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 20px rgba(0,255,255,0.2);
+            animation: fadeIn 1s ease;
+        }
+
+        /* JUDUL */
+        h2 {
+            color: #00f2fe;
+            text-shadow: 0 0 8px #00f2fe;
+        }
+
+        /* TEKS */
+        .content-text p {
+            text-align: justify;
+        }
+
+        /* VIDEO */
+        .video-box {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .video-box iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px #00f2fe;
+            transition: 0.3s;
+        }
+
+        .video-box iframe:hover {
+            transform: scale(1.02);
+        }
+
+        /* FOOTER */
+        footer {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .video-box iframe {
+                height: 250px;
+            }
+        }
+
+        /* ANIMASI */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO NOAH KHEDIRA RISNANDAR</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="content-text">
+
+        <h2>Video Argumentasi</h2>
+        <p>
+            <i>
+            Video argumentasi yang saya buat meunjukan kegiatan yang saya lakukan saat IC di Nisvara Bakery dan manfaat pembelajaran disana.
+            </i>
+        </p>
+
+        <h2>Topik yang Diangkat</h2>
+        <p>
+            <i>
+            Topiknya adalah kegiatan di Nisvara Bakery
+            </i>
+        </p>
+
+        <h2>Alasan Memilih Topik</h2>
+        <p>
+            <i>
+            Saya memilih topik tersebut karena itu adalah topik yang memiliki paling banyak manfaatnya.
+            </i>
+        </p>
+
+        <h2>Pesan dan Harapan</h2>
+        <p>
+            <i>
+           Saya harap vidio saya bermanfaat dan mohon maaf jika ada kesalahan.
+            </i>
+        </p>
+
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-box">
+        <h2>Video Karya Saya</h2>
+        <p><i></i></p>
+
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/r44wNkBWO0I?si=dLFS77TqGTJ2VEyk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Noah Khedira@2026</p>
+</footer>
+
+</body>
+</html>
